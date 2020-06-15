@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 What do you want to say ?
+  form(action='/', method='POST')
+    div 
+      label(for='user') Username:
+      br
+      input.user(name='user', type='text')
+    div
+      label(for='message') Message:
+      br
+      input(name='message', type='text')
+    div
+      button(type='submit') Submit
+  br
+  a(href='./') < Go back
+    

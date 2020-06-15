@@ -1,0 +1,46 @@
+body {
+  padding: 50px;
+  font: 14px Helvetica, Arial, sans-serif;
+  background-color: #dae1e7;
+}
+
+a {
+  color: #d9534f;
+  text-decoration: none;
+}
+
+p.user {
+  color: #142850;
+  font-weight: 700;
+}
+
+span.date {
+  color: #27496d;
+  font-style: italic;
+}
+
+button {
+  background-color: #00909e;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+input {
+  width: 50%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin: 8px 0px;
+  border: none;
+  border-bottom: 1px solid#00909e;
+  outline: none;
+  background-color: white;
+  opacity: 60%;
+}
+
+input.user {
+  padding: 6px 20px;
+}
