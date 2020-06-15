@@ -8,12 +8,12 @@ const messages = [
   {
     text: 'Hi there!',
     user: 'Amando',
-    added: moment(new Date()).startOf('hour').fromNow(),
+    added: moment(new Date()).format('MMMM Do YYYY, h:mm:ss a'),
   },
   {
     text: 'Hello World!',
     user: 'Charles',
-    added: moment(new Date()).startOf('hour').fromNow(),
+    added: moment(new Date()).format('MMMM Do YYYY, h:mm:ss a'),
   },
 ];
 
@@ -26,7 +26,7 @@ router.post('/', (req, res) => {
   const newMessage = {
     text: req.body.message,
     user: req.body.user,
-    added: moment(new Date()).startOf('hour').fromNow(),
+    added: moment(new Date()).format('MMMM Do YYYY, h:mm:ss a'),
   };
   messages.push(newMessage);
   res.redirect('/');
